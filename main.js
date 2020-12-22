@@ -1,10 +1,10 @@
-const { app, Tray, Menu, nativeTheme: { shouldUseDarkColors }, BrowserWindow } = require('electron')
+const { app, Tray, Menu, BrowserWindow } = require('electron')
 const { exec } = require("child_process");
 const path = require('path')
 const fs = require('fs');
 const { homedir } = require('os')
 
-const icon = shouldUseDarkColors ? 'tray-icon-white.png' : 'tray-icon-dark.png'
+const icon = 'tray-icon.png'
 const homedirPath = homedir()
 let tray = null
 const configString = `
